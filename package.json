@@ -1,0 +1,14 @@
+{
+  "name": "rj-restaurant-pos",
+  "version": "1.0.0",
+  "description": "RJ Restaurant POS iOS Wrapper",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo 'Ready'"
+  },
+  "dependencies": {
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/ios": "^6.0.0"
+  }
+}
