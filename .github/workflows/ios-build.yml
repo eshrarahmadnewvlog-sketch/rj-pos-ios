@@ -24,8 +24,9 @@ jobs:
         run: |
           cd ios/App
           xcodebuild -workspace App.xcworkspace -scheme App -configuration Release -sdk iphoneos -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+          APP_PATH=$(find build -name "App.app" -type d | head -n 1)
           mkdir -p Payload
-          cp -r build/Build/Products/Release-iphoneos/App.app Payload/
+          cp -r "$APP_PATH" Payload/
           zip -r RJ_Restaurant_POS.ipa Payload
 
       - name: Upload IPA
