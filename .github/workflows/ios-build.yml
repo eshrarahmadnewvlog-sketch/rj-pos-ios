@@ -23,7 +23,7 @@ jobs:
       - name: Build Unsigned IPA
         run: |
           cd ios/App
-          xcodebuild -project App.xcodeproj -scheme App -configuration Release -sdk iphoneos CODE_SIGNING_ALLOWED=NO build
+          xcodebuild -workspace App.xcworkspace -scheme App -configuration Release -sdk iphoneos CODE_SIGNING_ALLOWED=NO build
           mkdir -p Payload
           cp -r build/Release-iphoneos/App.app Payload/
           zip -r RJ_Restaurant_POS.ipa Payload
