@@ -1,0 +1,12 @@
+{
+  "appId": "com.eshrar.rjrestaurantpos",
+  "appName": "RJ Restaurant POS",
+  "webDir": "www",
+  "server": {
+    "url": "https://eshrar1500-a11y.github.io/rj-pos-app/",
+    "cleartext": true
+  },
+  "ios": {
+    "contentInset": "always"
+  }
+}
